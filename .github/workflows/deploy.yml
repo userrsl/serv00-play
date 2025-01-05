@@ -30,6 +30,8 @@ jobs:
           BUTTON_URL: ${{secrets.BUTTON_URL}}
           AUTOUPDATE: ${{vars.AUTOUPDATE}}
           LOGININFO: ${{vars.LOGININFO}}
+          DINGDING_WEBHOOK_URL: ${{ secrets.DINGDING_WEBHOOK_URL }}
+          DINGDING_SECRET: ${{ secrets.DINGDING_SECRET }}
         run: |
           chmod +x ./revive.sh
           ./revive.sh
